@@ -1,0 +1,61 @@
+.container {
+	padding: 40px;
+}
+
+.title {
+	text-align: center;
+	margin: 20px 0 40px;
+}
+
+/*#region Box*/
+.boxContainer {
+	display: flex;
+}
+
+.boxContainer .box {
+	flex: 1;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.boxContainer .box:not(:last-child) {
+	margin-right: 20px;
+}
+
+.boxContainer .box .boxTitle {
+	overflow: visible;
+	background-color: #141a21;
+	color: #fff;
+}
+
+.boxContainer .box .boxTitle .title {
+	padding: 10px;
+	margin: 0;
+}
+/*#endregion */
+
+/*#region Table*/
+.tableContainer {
+	overflow: auto;
+}
+
+.tableContainer .tableRow {
+	padding: 0 10px;
+	min-height: 40px;
+	align-content: center;
+}
+
+.tableContainer .tableRow:nth-child(odd) {
+	background-color: #e8e8e8;
+}
+
+.tableContainer .tableRow .tableCell {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.tableContainer .tableRow .tableCell.tableError {
+	text-align: center;
+	color: red;
+}
+/*#endregion */
