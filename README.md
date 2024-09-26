@@ -6,11 +6,17 @@ This project fetches below details from log file and displays it in a dashboard.
 • The top 3 most active IP addresses
 
 ## Assumptions
-• This project assumes that it will be run in the latest stable version of node
+• This project assumes that it will be run in the latest stable version of node.
 
 ## Installation
-• Extract the zip folder.\
-• Navigate to the log-parser project directory,.\
+• Clone the repository.
+```
+git clone https://github.com/jayakrishnanrnair/dashboard.git
+```
+• Navigate to the project directory.
+```
+cd dashboard
+```
 • Install dependencies:
 ```
 npm install
