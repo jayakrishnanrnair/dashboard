@@ -10,6 +10,13 @@
 /*#region Box*/
 .boxContainer {
 	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 480px) {
+	.boxContainer {
+		flex-direction: row;
+	}
 }
 
 .boxContainer .box {
@@ -19,7 +26,13 @@
 }
 
 .boxContainer .box:not(:last-child) {
-	margin-right: 20px;
+	margin: 0 0 20px;
+}
+
+@media screen and (min-width: 480px) {
+	.boxContainer .box:not(:last-child) {
+		margin: 0 20px 0 0;
+	}
 }
 
 .boxContainer .box .boxTitle {
